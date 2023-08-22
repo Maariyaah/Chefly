@@ -1,0 +1,15 @@
+<p>Hello from Index</p>
+
+<% @chef_offers.each do |offer| %>
+<%= offer.name %>
+<%= offer.cuisine_category %>
+<%= offer.dish_specialty %>
+<%= offer.previous_work_experience %>
+<%= offer.rating %>
+<%= offer.location %>
+<%= offer.price_per_hour %>
+
+<%= cl_image_tag @chef_offer.photo.key, height: 300, width: 400 %>
+   
+
+<% end %>
