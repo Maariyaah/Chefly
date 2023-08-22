@@ -1,0 +1,61 @@
+.carousel.css {
+  font-family: "Spline Sans", sans-serif;
+  color: #FFF;
+}
+
+.slide-1 {
+  background-image: asset-url(indian_cuisine);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-2 {
+  background-image: asset-url(portuguese_cuisine);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-3 {
+  background-image: asset-url(chinese_cuisine);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-4 {
+  background-image: asset-url(italian_cuisine);
+  background-position: center;
+  background-size: cover;
+}
+
+h3 {
+  font-family:"Spline Sans", sans-serif;
+  color: white;
+  text-shadow: 2px 2px 10px #000000;
+}
+
+.btn-book {
+  color: #ffffff;
+  font-weight: 500;
+  border-color: rgb(136, 174, 141);
+  background-color: rgb(136, 174, 141);
+  border-radius: 10px;
+  line-height: 1.7;
+  font-family: "Spline Sans", sans-serif;;
+}
+
+.btn-book:hover {
+  border-color: rgb(51, 124, 93);
+  background-color: rgb(51, 124, 93);
+  color: #fff;
+ }
+
+ #heroSlider h6::after,
+ #heroSlider h6::before {
+     content: " ";
+     width: 40px;
+     height: 4px;
+     background-color: #ffffff;
+     display: inline-block;
+     margin: 10px;
+     vertical-align: middle;
+ }
