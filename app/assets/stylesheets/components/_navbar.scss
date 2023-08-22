@@ -1,12 +1,36 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.navbar {
+  font-family: "Spline Sans", sans-serif;
+  color: #777;
+  line-height: 1.7;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+a {
+  color: #222;
+  text-decoration: none;
+  transition: all 0.5s;
+  font-weight: 600;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+a:hover {
+  color: #8c9d93;
+}
+
+img {
+  min-width: 100%;
+}
+
+.btn-brand {
+  color: #fff;
+  font-weight: 500;
+  border-color: rgb(136, 174, 141);
+  background-color: rgb(136, 174, 141);
+  border-radius: 10px;
+  font-family: "Spline Sans", sans-serif;
+}
+
+.btn-brand:hover {
+ border-color: rgb(51, 124, 93);
+ background-color: rgb(51, 124, 93);
+ color: #fff;
+ font-family: "Spline Sans", sans-serif;
 }
