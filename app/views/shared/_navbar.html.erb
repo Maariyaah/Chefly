@@ -1,7 +1,6 @@
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-white shadow py-3">
   <div class="container">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="<%= root_path %>">
     <%= image_tag 'image1', class: "avatar" %>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,12 +8,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto">
-
         <li class="nav-item">
-          <a class="nav-link" href="#home">Chefly</a>
+          <a class="nav-link" href="<%= root_path %>">Chefly</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#chefs">Chefs</a>
+          <a class="nav-link" href="<%= chef_offers_path %>">Chefs</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#Cuisines">Cuisines</a>
@@ -23,9 +21,8 @@
           <a class="nav-link" href="#Bookings">Bookings</a>
         </li>
       </ul>
-      <a href="#" class="btn btn-brand">Login</a>
+      <a href="<%= new_user_registration_path %> " class="btn btn-login mr-2">Sign Up</a>
+      <a href="<%= new_user_session_path %> " class="btn btn-signup">Login</a>
     </div>
   </div>
 </nav>
-
- 
