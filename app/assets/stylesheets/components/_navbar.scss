@@ -19,7 +19,7 @@ img {
   min-width: 100%;
 }
 
-.btn-brand {
+.btn-login {
   color: #fff;
   font-weight: 500;
   border-color: rgb(136, 174, 141);
@@ -28,9 +28,25 @@ img {
   font-family: "Spline Sans", sans-serif;
 }
 
-.btn-brand:hover {
+.btn-signup {
+  color: #fff;
+  font-weight: 500;
+  border-color: rgb(136, 174, 141);
+  background-color: rgb(136, 174, 141);
+  border-radius: 10px;
+  font-family: "Spline Sans", sans-serif;
+}
+
+.btn-login:hover {
  border-color: rgb(51, 124, 93);
  background-color: rgb(51, 124, 93);
  color: #fff;
  font-family: "Spline Sans", sans-serif;
 }
+
+.btn-signup:hover {
+  border-color: rgb(51, 124, 93);
+  background-color: rgb(51, 124, 93);
+  color: #fff;
+  font-family: "Spline Sans", sans-serif;
+ }
