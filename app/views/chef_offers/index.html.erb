@@ -1,24 +1,40 @@
-<h4>Meet our Chefs</h4>
+<h4 class="mt-4"> Your next Chef?</h4>
 
 
-<div class="container">
-<div class="row p-4">
-  <% @chef_offers.each do |offer| %>
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card">
-        <%= cl_image_tag offer.photo.key, height: 150, width: 150, class: "mt-3"%>
-        <div class="card-body">
-          <h5 class="card-title"><%= offer.name %></h5>
-          <p><%= offer.cuisine_category %></p>
-          <p><%= offer.dish_specialty %></p>
-          <p><%= offer.previous_work_experience %></p>
-          <p><%= offer.rating%></p>
-          <p><%= offer.location %></p>
-          <p><%= offer.price_per_hour%></p>
-          <a href="<%= chef_offer_path(offer) %>" class="btn btn-primary" style="text-decoration: none;">Go somewhere</a>
+<div class="input-group">
+  <input data-target="words" type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon"/>
+  <button type="button" class="btn btn-book">search</button>
+</div>
+
+
+<div class="container m-5">
+  <div class="row p-6 lg-6">
+    <% @chef_offers.each do |offer| %>
+      <div class="col-md-6 mb-4">
+        <div class="card m-4" style="background-color: #f4f4f4; height: 200px; overflow: hidden; border-radius:20px; flex-wrap: no-wrap;">
+          <div class="row" style="flex-wrap: no-wrap;">
+            <div class="col-4 mb-0">
+              <div class="image-container" style="border-radius: 2px; margin-top:0">
+                <%= cl_image_tag offer.photo.key, style: "width: 100%; object-fit: cover; filter: grayscale(30%), height:100%" %>
+              </div>
+            </div>
+
+            <div class="col-7">
+              <div class="card-body m-3 border-0 rounded" style="border-radius: 90px;">
+                <div class="card-text text-justify" style="margin-top: 10px;">
+                  <p class="mb-2"><strong>Cuisine Specialty:</strong> <%= offer.cuisine_category %></p>
+                  <p class="mb-2"><strong>Dish Specialty:</strong> <%= offer.dish_specialty %></p>
+                </div>
+
+                <div>
+                  <p><strong>Rating:</strong> <%= offer.rating %> ⭐</p>
+                  <p><a href="<%= chef_offer_path(offer) %>" class="btn btn-book" style="text-decoration: none;">Book <%= offer.name %></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  <% end %>
-</div>
+    <% end %>
+  </div>
 </div>
