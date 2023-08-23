@@ -1,6 +1,11 @@
 .carousel.css {
-  font-family: "Spline Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #FFF;
+  height: 150px;
+}
+
+.image-size {
+  height: 85vh;
 }
 
 .slide-1 {
@@ -28,9 +33,19 @@
 }
 
 h3 {
-  font-family:"Spline Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: white;
   text-shadow: 2px 2px 10px #000000;
+}
+
+.btn-main {
+  color: #ffffff;
+  font-weight: 500;
+  border-color: rgb(136, 174, 141);
+  background-color: rgb(136, 174, 141);
+  border-radius: 10px;
+  line-height: 1.7;
+  font-family: 'Poppins', sans-serif;
 }
 
 .btn-book {
@@ -40,7 +55,11 @@ h3 {
   background-color: rgb(136, 174, 141);
   border-radius: 10px;
   line-height: 1.7;
-  font-family: "Spline Sans", sans-serif;;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  padding: 5px 60px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 3px 6px #000000;
 }
 
 .btn-book:hover {
