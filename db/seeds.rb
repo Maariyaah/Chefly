@@ -14,8 +14,7 @@ chef1 = User.create(email:"avillez@chef.com", password:'123456',is_chef: true, n
 puts "#{chef1.name} was created!"
 chef2 = User.create(email:"vieira@nobu.com", password:'123456',is_chef: true, name: 'Marlene Vieira', username:'Malene.v',cuisine_preferences: 'Sushi')
 puts "#{chef2.name} was created!"
-chef3 = User.create(email:"ramsey@ramsey.com", password:'123456',is_chef: true, name: 'Gordon Ramsey', username:'Ramsey',cuisine_preferences: 'Modern European')
-"#{chef3.name} was created!"
+
 chef4 = User.create(email:"beatriz@lewagon.com", password:'123456',is_chef: true, name: 'Beatriz Vieira', username:'Beaa',cuisine_preferences: 'Nepalese')
 chef5 = User.create(email:"quaresma4ever@chef.com", password:'123456',is_chef: true, name: 'Antonio Quaresma', username:'Quaresma',cuisine_preferences: 'Vegan')
 
@@ -53,20 +52,7 @@ chef_two.save
 
 puts "chef two done"
 
-file3 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692716155/Chefly/gordon.jpg')
-  chef_three = ChefOffer.new(
-  name: "Gordon Ramsey",
-  cuisine_category: "Modern European",
-  dish_specialty: "Coq au Vin",
-  previous_work_experience: "The Wolseley",
-  rating: 4.6,
-  location: "Beco do Bugio 4",
-  price_per_hour: 5.0,
-  user: chef3
-  )
-chef_three.photo.attach(io: file3, filename: "gordon.jpg", content_type:"image/png")
-chef_three.save
-puts "chef 3 done"
+
 
 file4 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692711857/Chefly/beatriz.jpg')
 
