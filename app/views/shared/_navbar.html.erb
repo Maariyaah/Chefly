@@ -1,16 +1,15 @@
-<nav class="navbar navbar-expand-lg bg-white shadow py-3">
-  <div class="container">
+<nav class="navbar navbar-expand-lg bg-white shadow-lg py-3" style="opacity: 80%;">
+  <div class="container" id="card-chef">
     <a class="navbar-brand" href="<%= root_path %>">
     <%= image_tag 'image1', class: "avatar" %>
     </a>
+    <a class="nav-first" href="<%= root_path %>">Chefly</a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="<%= root_path %>">Chefly</a>
-        </li>
         <li class="nav-item">
           <a class="nav-link" href="<%= chef_offers_path %>">Chefs</a>
         </li>
