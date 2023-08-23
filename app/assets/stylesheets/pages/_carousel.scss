@@ -93,13 +93,31 @@ h3 {
   color: #fff;
  }
 
+ .btn-see-more {
+  color: #fff;
+  font-weight: 500;
+  border-color: rgb(136, 174, 141);
+  background-color: rgb(136, 174, 141);
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+}
+
  #heroSlider h6::after,
  #heroSlider h6::before {
-     content: " ";
-     width: 40px;
-     height: 4px;
-     background-color: #ffffff;
-     display: inline-block;
-     margin: 10px;
-     vertical-align: middle;
+    content: " ";
+    width: 40px;
+    height: 4px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+ }
+
+ .h2 {
+  font-family: 'Poppins', sans-serif;
  }
