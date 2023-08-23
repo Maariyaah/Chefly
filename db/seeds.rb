@@ -8,7 +8,7 @@ sleep(0.5)
 
 ChefOffer.destroy_all
 User.destroy_all
-  ## user admin
+## user admin
 
 chef1 = User.create(email:"avillez@chef.com", password:'123456',is_chef: true, name: 'Jose Avillez', username:'Avillez1',cuisine_preferences: 'Portuguese')
 puts "#{chef1.name} was created!"
