@@ -21,6 +21,6 @@ class ChefOffersController < ApplicationController
   # end
 
   # def chef_offer_params
-  #   params.require(:ChefOffer).permit(:name, :cuisine_category, :dish_specialty, :previous_work_experience, :rating, :location, :price_per_hour)
+  #   params.require(:ChefOffer).permit(:name, :cuisine_category, :dish_specialty, :previous_work_experience, :rating, :location, :bio, :price_per_hour)
   # end
 end
