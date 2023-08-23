@@ -24,14 +24,14 @@
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "cuisine preferences" }%>
-   <%= f.input :is_chef, as: :boolean, label: "are you a chef?" %>
-
+   <%= f.input :is_chef, as: :boolean, label: "Sign up as chef" %>
+    <%= f.input :is_chef, as: :boolean, label: "Sign up as customer" %>
 
   </div>
 
-  <div class="form-actions">
+  <div class="form-actions btn btn-book" button type="button">
     <%= f.button :submit, "Sign up" %>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<%# <%= render "devise/shared/links" %>
