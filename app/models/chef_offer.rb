@@ -9,4 +9,6 @@ class ChefOffer < ApplicationRecord
   validates :rating, numericality: { in: 0..5 }
   validates :price_per_hour, numericality: true
   # validates :bio, length: { minimum: 20, maximum: 200 }
+  geocoded_by :address
+  after_validation :geocode, if: :will_save_change_to_address?
 end

@@ -1,0 +1,10 @@
+<%= simple_form_for [@chef_offer, @booking] do |f| %>
+  <div class="form-inputs">
+    <p><%= f.input :start_date %></p>
+    <p><%= f.input :end_date %></p>
+  </div>
+
+  <div class="form-actions btn btn-book" button type="button">
+    <%= f.button :submit, "Book now" %>
+     </div>
+<% end %>
