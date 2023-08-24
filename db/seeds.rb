@@ -22,8 +22,14 @@ chef8 = User.create(email: "wolfie@chef.com", password:'123456',is_chef: true, n
 chef9 = User.create(email: "david@chef.com", password:'123456',is_chef: true, name: 'David Chang', username:'DavidChang',cuisine_preferences: 'American-Asian Fusion')
 chef10 = User.create(email: "vikas@chef.com", password:'123456',is_chef: true, name: 'Vikas Khanna', username:'Vikas',cuisine_preferences: 'Indian')
 chef11 = User.create(email: "amaury@chef.com", password:'123456',is_chef: true, name: 'Amaury Guichon', username:'Amaury',cuisine_preferences: 'Pastry')
+chef12 = User.create(email: "bjorn@chef.com", password:'123456',is_chef: true, name: 'Björn Frantzén', username:'Bjorn',cuisine_preferences: 'Game')
+chef13 = User.create(email: "niklas@chef.com", password:'123456',is_chef: true, name: 'Niklas Ekstedt', username:'Niklas',cuisine_preferences: 'Outdoors Cooking')
+chef14 = User.create(email: "christian@chef.com", password:'123456',is_chef: true, name: 'Christian Hellberg', username:'Christian',cuisine_preferences: 'Scandinavian Fusion')
+chef15 = User.create(email: "mikael@chef.com", password:'123456',is_chef: true, name: 'Mikael Jonsson', username:'Mikael',cuisine_preferences: 'Paleo')
+chef16 = User.create(email: "magnus@chef.com", password:'123456',is_chef: true, name: 'Magnus Nilsson', username:'Magnus',cuisine_preferences: 'New Nordic Cuisine')
+chef17 = User.create(email: "kenneth@chef.com", password:'123456',is_chef: true, name: 'Kenneth Stuen', username:'Kenneth',cuisine_preferences: 'Chinese')
 
-puts "chef 8 is created"
+puts "chef 17 is created"
 
 file = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692711857/Chefly/jose.jpg')
 chef_one = ChefOffer.new(
@@ -178,6 +184,97 @@ chef_eleven = ChefOffer.new(
   user: chef11,
   bio: "Lorem ipsum"
 )
-chef_eleven.photo.attach(io: file11, filename: "Vikas.jpg", content_type: "image/png")
+chef_eleven.photo.attach(io: file11, filename: "Amaury.jpg", content_type: "image/png")
 chef_eleven.save
+
+file12 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692872902/440px-Bj_C3_B6rn_Frantzen_vzawtu.jpg')
+chef_twelve = ChefOffer.new(
+  name: "Björn Frantzén",
+  cuisine_category: "Game",
+  dish_specialty: "Elk stew",
+  previous_work_experience: "The Frantzén restaurant",
+  rating: 4.8,
+  location: "Arroios",
+  price_per_hour: 420,
+  user: chef12,
+  bio: "Lorem ipsum"
+)
+chef_twelve.photo.attach(io: file12, filename: "Bjorn.jpg", content_type: "image/png")
+chef_twelve.save
+
+file13 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692873126/Sk_C3_A4rmavbild-2019-06-10-kl.-17.15.06-2-copy_t0iyci.jpg')
+chef_thirteen = ChefOffer.new(
+  name: "Niklas Ekstedt",
+  cuisine_category: "Outdoors Cooking",
+  dish_specialty: "Smoked Cuisine",
+  previous_work_experience: "Lille Chèf",
+  rating: 4.8,
+  location: "Anjos",
+  price_per_hour: 380,
+  user: chef13,
+  bio: "Lorem ipsum"
+)
+chef_thirteen.photo.attach(io: file13, filename: "Niklas.jpg", content_type: "image/png")
+chef_thirteen.save
+
+file14 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692873380/Christian_s56_gmty8l.jpg')
+chef_fourteen = ChefOffer.new(
+  name: "Christian Hellberg",
+  cuisine_category: "Scandinavian Fusion",
+  dish_specialty: "Boiled potato with caviar and smoked mayonnaise",
+  previous_work_experience: "Griffins Steakhouse Extraordinaire",
+  rating: 4.9,
+  location: "Santa Cruz",
+  price_per_hour: 380,
+  user: chef14,
+  bio: "Lorem ipsum"
+)
+chef_fourteen.photo.attach(io: file14, filename: "Christian.jpg", content_type: "image/png")
+chef_fourteen.save
+
+file15 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692873532/image-21138_memibm.jpg')
+chef_fifteen = ChefOffer.new(
+  name: "Mikael Jonsson",
+  cuisine_category: "Paleo",
+  dish_specialty: "Pigeon",
+  previous_work_experience: "Hedone London",
+  rating: 4.6,
+  location: "Pena",
+  price_per_hour: 390,
+  user: chef15,
+  bio: "Lorem ipsum"
+)
+chef_fifteen.photo.attach(io: file15, filename: "Mikael.jpg", content_type: "image/png")
+chef_fifteen.save
+
+file16 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692873695/5184_vtejp9.jpg')
+chef_sixteen = ChefOffer.new(
+  name: "Magnus Nilsson",
+  cuisine_category: "New Nordic Cuisine",
+  dish_specialty: "Poached Single Scallop",
+  previous_work_experience: "Fäviken Restaurant",
+  rating: 4.1,
+  location: "Almada",
+  price_per_hour: 320,
+  user: chef16,
+  bio: "Lorem ipsum"
+)
+chef_sixteen.photo.attach(io: file16, filename: "Magnus.jpg", content_type: "image/png")
+chef_sixteen.save
+
+file17 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692788942/edob4vhapk8fffbarzkz.jpg')
+chef_seventeen = ChefOffer.new(
+  name: "Kenneth Stuen",
+  cuisine_category: "Chinese",
+  dish_specialty: "Smoked Chicken Gong Bao",
+  previous_work_experience: "Tønsberg Chicken House",
+  rating: 2.9,
+  location: "Penha França",
+  price_per_hour: 125,
+  user: chef17,
+  bio: "Lorem ipsum"
+)
+chef_seventeen.photo.attach(io: file17, filename: "Kenneth.jpg", content_type: "image/png")
+chef_seventeen.save
+
 puts "done"
