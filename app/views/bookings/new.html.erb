@@ -1,0 +1,16 @@
+<h1> hello </h1>
+<%= simple_form_for (@booking) do |f| %>
+  <div class="form-inputs">
+
+  <%= f.button :submit, "Book now" %>
+    <p><%= f.input :status %></p>
+    <p><%= f.input :start_date %></p>
+    <p><%= f.input :end_date %></p>
+</div>
+
+  <div class="form-actions btn btn-book" button type="button">
+    <%= f.button :submit, "Book now" %>
+     </div>
+<% end %>
+
+
