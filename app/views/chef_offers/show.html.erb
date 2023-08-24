@@ -4,26 +4,29 @@
 
 
   <div class="container mt-4 border-0">
-    <div class="card final" style="background-color: white; max-width: 100vw; box-shadow: 10px 10px 10px 5px #ABB2B9; border-width: 2px black">
+    <div style="background-color: white; max-width: 100vw; border-radius: 200px; box-shadow: 10px 10px 10px 5px #ABB2B9; border-width: 2px black">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" style="border-radius:200px;">
           <%= cl_image_tag @chef_offer.photo.key, style: "width: 100%; height: 100%; border-radius:2px; filter: grayscale(30%)" %>
         </div>
 
-        <div class="col-md-4">
-          <div class="card-body m-5 border-0 rounded" style="background-color: white; border-radius: 90px;">
+        <div class="col-md-4" style="margin-bottom:20px;">
+          <div class="card-body m-5 border-0" style="background-color: white;">
             <div class="card-text text-justify">
               <p class="mb-4"><strong>Cuisine Specialty:</strong> <%= @chef_offer.cuisine_category %></p>
               <p class="mb-4"><strong>Dish Specialty:</strong> <%= @chef_offer.dish_specialty %></p>
               <p class="mb-4"><strong>Notable Work Experience:</strong> <%= @chef_offer.previous_work_experience %></p>
               <p class="mb-4"><strong>Address:</strong> <%= @chef_offer.location %></p>
-              <p class="mb-4"><strong>Price per hour:</strong> €<%= @chef_offer.price_per_hour %></p>
             </div>
 
-            <div class="d-flex justify-content-space-between mt-4">
-              <p class="mt-4"><strong>Rating:</strong> <%= @chef_offer.rating %> ⭐</p>
-              <button class="btn btn-book m-3">Book now!</button>
+            <div class="d-flex justify-content-space-between">
+              <p class="m-3"><strong>Rating:</strong> <%= @chef_offer.rating %> ⭐</p>
+                            <p class="m-3"><strong>Price per hour:</strong> €<%= @chef_offer.price_per_hour %></p>
+
             </div>
+
+            <p><button class="btn btn-book2 m-3" style="padding:10px 60px;"><i class="fa-solid fa-envelope"></i> Book <%= @chef_offer.name %>  now! </button>
+</p>
           </div>
         </div>
 
@@ -35,6 +38,12 @@
   </div>
 </div>
 
+
+<div class="class buttoncenter text-center" style="margin-top:20px; margin-bottom:20px;">
+  <p style="margin-bottom: 20px;"><a href="<%= root_path%>" class="btn btn-book align-center">
+  <i class="fa-solid fa-house"></i>
+  </a></p>
+</div>
 
 
 
