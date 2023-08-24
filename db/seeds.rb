@@ -214,6 +214,7 @@ chef_twelve = ChefOffer.new(
   dish_specialty: "Elk stew",
   previous_work_experience: "The Frantzén restaurant",
   rating: 4.8,
+  address: "Arroios",
   location: "Arroios",
   price_per_hour: 420,
   user: chef12,
@@ -221,7 +222,6 @@ chef_twelve = ChefOffer.new(
 )
 chef_twelve.photo.attach(io: file12, filename: "Bjorn.jpg", content_type: "image/png")
 chef_twelve.save
-
 file13 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692873126/Sk_C3_A4rmavbild-2019-06-10-kl.-17.15.06-2-copy_t0iyci.jpg')
 chef_thirteen = ChefOffer.new(
   name: "Niklas Ekstedt",
@@ -229,6 +229,7 @@ chef_thirteen = ChefOffer.new(
   dish_specialty: "Smoked Cuisine",
   previous_work_experience: "Lille Chèf",
   rating: 4.8,
+  address: "Anjos",
   location: "Anjos",
   price_per_hour: 380,
   user: chef13,
@@ -236,7 +237,6 @@ chef_thirteen = ChefOffer.new(
 )
 chef_thirteen.photo.attach(io: file13, filename: "Niklas.jpg", content_type: "image/png")
 chef_thirteen.save
-
 file14 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692873380/Christian_s56_gmty8l.jpg')
 chef_fourteen = ChefOffer.new(
   name: "Christian Hellberg",
@@ -244,6 +244,7 @@ chef_fourteen = ChefOffer.new(
   dish_specialty: "Boiled potato with caviar and smoked mayonnaise",
   previous_work_experience: "Griffins Steakhouse Extraordinaire",
   rating: 4.9,
+  address: "Santa Cruz",
   location: "Santa Cruz",
   price_per_hour: 380,
   user: chef14,
@@ -251,7 +252,6 @@ chef_fourteen = ChefOffer.new(
 )
 chef_fourteen.photo.attach(io: file14, filename: "Christian.jpg", content_type: "image/png")
 chef_fourteen.save
-
 file15 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692873532/image-21138_memibm.jpg')
 chef_fifteen = ChefOffer.new(
   name: "Mikael Jonsson",
@@ -259,6 +259,7 @@ chef_fifteen = ChefOffer.new(
   dish_specialty: "Pigeon",
   previous_work_experience: "Hedone London",
   rating: 4.6,
+  address: "Pena",
   location: "Pena",
   price_per_hour: 390,
   user: chef15,
@@ -266,7 +267,6 @@ chef_fifteen = ChefOffer.new(
 )
 chef_fifteen.photo.attach(io: file15, filename: "Mikael.jpg", content_type: "image/png")
 chef_fifteen.save
-
 file16 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692873695/5184_vtejp9.jpg')
 chef_sixteen = ChefOffer.new(
   name: "Magnus Nilsson",
@@ -274,6 +274,7 @@ chef_sixteen = ChefOffer.new(
   dish_specialty: "Poached Single Scallop",
   previous_work_experience: "Fäviken Restaurant",
   rating: 4.1,
+  address: "Almada",
   location: "Almada",
   price_per_hour: 320,
   user: chef16,
@@ -281,7 +282,6 @@ chef_sixteen = ChefOffer.new(
 )
 chef_sixteen.photo.attach(io: file16, filename: "Magnus.jpg", content_type: "image/png")
 chef_sixteen.save
-
 file17 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692788942/edob4vhapk8fffbarzkz.jpg')
 chef_seventeen = ChefOffer.new(
   name: "Kenneth Stuen",
@@ -289,6 +289,7 @@ chef_seventeen = ChefOffer.new(
   dish_specialty: "Smoked Chicken Gong Bao",
   previous_work_experience: "Tønsberg Chicken House",
   rating: 2.9,
+  address: "Penha França",
   location: "Penha França",
   price_per_hour: 125,
   user: chef17,
@@ -296,5 +297,5 @@ chef_seventeen = ChefOffer.new(
 )
 chef_seventeen.photo.attach(io: file17, filename: "Kenneth.jpg", content_type: "image/png")
 chef_seventeen.save
-
 puts "done"
+
