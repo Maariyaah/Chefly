@@ -1,6 +1,49 @@
 .card {
   font-family: 'Poppins', sans-serif;
   border-radius: 10px;
+  border-width: 0px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+}
+
+
+.hr-lines{
+  position: relative;
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 70px;
+  background: rgb(136, 174, 141);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 70px;
+  background: rgb(136, 174, 141);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+p {
+font-size: 15px;
+font-family: 'Poppins', sans-serif;
 }
 
 .btn-see-more {
@@ -11,3 +54,9 @@
   border-radius: 10px;
   font-family: 'Poppins', sans-serif;
 }
+
+.btn-see-more:hover {
+  border-color: rgb(51, 124, 93);
+  background-color: rgb(51, 124, 93);
+  color: #fff;
+ }
