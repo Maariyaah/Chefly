@@ -13,6 +13,7 @@
         <div class="col-md-4" style="margin-bottom:20px;">
           <div class="card-body m-5 border-0" style="background-color: white;">
             <div class="card-text text-justify">
+
               <p class="mb-4"><strong>Cuisine Specialty:</strong> <%= @chef_offer.cuisine_category %></p>
               <p class="mb-4"><strong>Dish Specialty:</strong> <%= @chef_offer.dish_specialty %></p>
               <p class="mb-4"><strong>Notable Work Experience:</strong> <%= @chef_offer.previous_work_experience %></p>
@@ -24,7 +25,7 @@
                             <p class="m-3"><strong>Price per hour:</strong> €<%= @chef_offer.price_per_hour %></p>
 
             </div>
-
+      
             <p><button class="btn btn-book2 m-3" style="padding:10px 60px;"><i class="fa-solid fa-envelope"></i> Book <%= @chef_offer.name %>  now! </button>
 </p>
           </div>
@@ -34,16 +35,15 @@
           <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" style="width: 100px; height:100%">
         </div>
       </div>
+
     </div>
-  </div>
+  </div><div style="width: 100%; height: 400px; margin-top:20px;"
+  data-controller="map"
+  data-map-markers-value="<%= @markers.to_json %>"
+  data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 </div>
 
 
-<div class="class buttoncenter text-center" style="margin-top:20px; margin-bottom:20px;">
-  <p style="margin-bottom: 20px;"><a href="<%= root_path%>" class="btn btn-book align-center">
-  <i class="fa-solid fa-house"></i>
-  </a></p>
-</div>
 
 
 
