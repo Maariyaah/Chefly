@@ -1,0 +1,25 @@
+<h3>Register as a Chef!</h3>
+
+<%= simple_form_for(@chef_offer) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <p><%= f.input :name %></p>
+    <p><%= f.input :cuisine_category %></p>
+    <p><%= f.input :dish_specialty %></p>
+    <p><%= f.input :previous_work_experience %></p>
+    <p><%= f.input :rating %></p>
+    <p><%= f.input :location %></p>
+    <p><%= f.input :price_per_hour %></p>
+    <p><%= f.input :bio %></p>
+    <p><%= f.input :photo, as: :file %></p>
+  </div>
+
+   <div class="form-actions btn btn-book" button type="button">
+    <%= f.button :submit, "Register" %>
+  </div>
+<% end %>
+
+
+
+<%# <%= render "devise/shared/links" %>
