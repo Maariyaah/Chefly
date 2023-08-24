@@ -206,6 +206,7 @@ chef_twelve = ChefOffer.new(
   previous_work_experience: "The Frantzén restaurant",
   rating: 4.8,
   location: "Arroios",
+  address: "Arroios",
   price_per_hour: 420,
   user: chef12,
   bio: "Lorem ipsum"
@@ -222,6 +223,7 @@ chef_thirteen = ChefOffer.new(
   rating: 4.8,
   location: "Anjos",
   price_per_hour: 380,
+  address: "Arroios",
   user: chef13,
   bio: "Lorem ipsum"
 )
@@ -236,6 +238,7 @@ chef_fourteen = ChefOffer.new(
   previous_work_experience: "Griffins Steakhouse Extraordinaire",
   rating: 4.9,
   location: "Santa Cruz",
+  address: "Arroios",
   price_per_hour: 380,
   user: chef14,
   bio: "Lorem ipsum"
@@ -251,6 +254,7 @@ chef_fifteen = ChefOffer.new(
   previous_work_experience: "Hedone London",
   rating: 4.6,
   location: "Pena",
+  address: "Arroios",
   price_per_hour: 390,
   user: chef15,
   bio: "Lorem ipsum"
@@ -267,6 +271,7 @@ chef_sixteen = ChefOffer.new(
   rating: 4.1,
   location: "Almada",
   price_per_hour: 320,
+  address: "Arroios",
   user: chef16,
   bio: "Lorem ipsum"
 )
@@ -282,6 +287,7 @@ chef_seventeen = ChefOffer.new(
   rating: 2.9,
   location: "Penha França",
   price_per_hour: 125,
+  address: "Arroios",
   user: chef17,
   bio: "Lorem ipsum"
 )

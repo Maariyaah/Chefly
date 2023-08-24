@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_24_100344) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_24_173327) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -44,12 +44,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_24_100344) do
 
   create_table "bookings", force: :cascade do |t|
     t.string "status"
-    t.string "start_date"
-    t.string "end_date"
     t.bigint "user_id", null: false
     t.bigint "chef_offer_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "starting"
+    t.date "ending"
     t.index ["chef_offer_id"], name: "index_bookings_on_chef_offer_id"
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end
