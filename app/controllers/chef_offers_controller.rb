@@ -13,7 +13,8 @@ class ChefOffersController < ApplicationController
 
   def show
     @chef_offer = ChefOffer.find(params[:id])
-    
+    @booking = Booking.new
+
 
     @markers = [
       {
