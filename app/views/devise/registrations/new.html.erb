@@ -25,13 +25,17 @@
                 autofocus: true,
                 input_html: { autocomplete: "cuisine preferences" }%>
    <%= f.input :is_chef, as: :boolean, label: "Sign up as chef" %>
-    <%= f.input :is_chef, as: :boolean, label: "Sign up as customer" %>
-
+    <div class="form-check">
+      <input class="form-check-input boolean optional" type="checkbox" value="1">
+      <label class="form-check-label boolean optional">Sign up as customer</label>
+    </div>
   </div>
 
   <div class="form-actions btn btn-book" button type="button">
     <%= f.button :submit, "Sign up" %>
   </div>
 <% end %>
+
+
 
 <%# <%= render "devise/shared/links" %>

@@ -1,0 +1,56 @@
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.testimonial-card .avatar {
+  width: 110px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+hr.solid {
+  border-top: 3px solid #88AE8D;
+  margin: 10px 0px;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+}
+
+h5 {
+  font-family: 'Poppins', sans-serif;
+}
+
+#second-hr-lines {
+  position: relative;
+  max-width: 400px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+#second-hr-lines:before {
+  content:" ";
+  height: 2px;
+  width: 100px;
+  background: rgb(136, 174, 141);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+#second-hr-lines:after {
+  content:" ";
+  height: 2px;
+  width: 100px;
+  background: rgb(136, 174, 141);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}

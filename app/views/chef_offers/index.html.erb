@@ -1,24 +1,40 @@
+<div class="row justify-content-center">
+  <div class="col-sm-8 my-3 lg-4">
+    <%= form_with url: chef_offers_path, method: :get, class: "d-flex m-4" do %>
+      <%= text_field_tag :query,
+            params[:query],
+            class: "form-control",
+            placeholder: "search by chef or cuisine..."
+        %>
+      <%= submit_tag "Search", name: "", class: "btn btn-book btn-sm" %>
+
+    <% end %>
+  </div>
+
+</div>
 
 
-<div class="justify-content-center d-flex align-items-center" style="margin-top:20px;">
-<div class="input-group " style="width:60%">
-  <input data-target="words" type="search" class="form-control rounded" placeholder="Search for your next Chef..." aria-label="Search" aria-describedby="search-addon"/>
-  <button type="button" class="btn btn-book">search</button>
-</div>
-</div>
+
+
+
+
 
 <div class="container m-5">
   <div class="row">
     <% @chef_offers.each do |offer| %>
       <div class="col-md-6 mb-4">
-        <div class="card m-4" style="background-color: #f4f4f4; overflow: hidden; border-radius:20px; flex-wrap: no-wrap;">
-          <div class="row" style="flex-wrap: no-wrap;">
+        <div class="card m-4" style="background-color: #f4f4f4; overflow: hidden; border-radius:20px; border-width:0;">
+          <div class="row">
               <div class="col-4 mb-0" style="border-radius: 2px; margin-top:0; background-image:url('<%= cl_image_path offer.photo.key %>');background-size: cover; background-position: center;">
             </div>
 
             <div class="col-7">
               <div class="card-body m-3 border-0 rounded" style="border-radius: 90px;">
                 <div class="card-text text-justify">
+                <h4 class="mb-2"> <strong><%= offer.name%></strong> </h4>
+
+                <p class="mb-2"><strong>Cuisine Specialty:</strong> <%= offer.cuisine_category %></p>
+
                   <p class="mb-2"><strong>Cuisine Specialty:</strong> <%= offer.cuisine_category %></p>
                   <p class="mb-2"><strong>Dish Specialty:</strong> <%= offer.dish_specialty %></p>
                 </div>
@@ -34,10 +50,4 @@
       </div>
     <% end %>
   </div>
-</div>
-
-<div class="class buttoncenter text-center">
-  <p style="margin-bottom: 20px;"><a href="<%= root_path%>" class="btn btn-book align-center">
-  <i class="fa-solid fa-house"></i>
-  </a></p>
 </div>
