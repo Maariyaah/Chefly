@@ -38,6 +38,7 @@ chef_one = ChefOffer.new(
   dish_specialty: "Bacalhau",
   previous_work_experience: "Tasca Macau, Tasca London and Belcanto",
   rating: 5.0,
+  address: "Avenida de Liberade",
   location: "Avenida de Liberade",
   price_per_hour: 250.0,
   user: chef1,
@@ -56,6 +57,7 @@ chef_two = ChefOffer.new(
   dish_specialty: "Sashimi",
   previous_work_experience: "Nobu, Hakkassan and Unique Sushi Lab",
   rating: 4.7,
+  address: "Rua Armando Ferreira",
   location: "Rua Armando Ferreira",
   price_per_hour: 150.0,
   user: chef2,
@@ -74,6 +76,7 @@ chef_four = ChefOffer.new(
   dish_specialty: "Jalfrezi Curry",
   previous_work_experience: "Ola Nepal, Sabor de Nepal and Sherpa",
   rating: 5.0,
+  address: "Rua do Conde",
   location: "Rua do Conde",
   price_per_hour: 1000.0,
   user: chef4,
@@ -89,6 +92,7 @@ chef_five = ChefOffer.new(
   dish_specialty: "Mushrooms",
   previous_work_experience: "Le Wagon, Chez Rodrigo and Go A Lisboa",
   rating: 3.5,
+  address: "Villa Franca",
   location: "Villa Franca",
   price_per_hour: 50,
   user: chef5,
@@ -104,6 +108,7 @@ chef_six = ChefOffer.new(
   dish_specialty: "Beef Wellington",
   previous_work_experience: "Jamie's Italian, Barbecoa and Fifteen",
   rating: 4.7,
+  address: "Cascais",
   location: "Cascais",
   price_per_hour: 350,
   user: chef6,
@@ -119,6 +124,7 @@ chef_seven = ChefOffer.new(
   dish_specialty: "Pasta primavera with roasted vegetables",
   previous_work_experience: "Giada, Pronto by Giada and The Cromwell",
   rating: 4.7,
+  address: "Belem",
   location: "Belem",
   price_per_hour: 450,
   user: chef7,
@@ -134,6 +140,7 @@ chef_eight = ChefOffer.new(
   dish_specialty: "Chocolate Tree Bark",
   previous_work_experience: "CUT, Chinois and Spago Las Vegas",
   rating: 4.9,
+  address: "Sintra",
   location: "Sintra",
   price_per_hour: 450,
   user: chef8,
@@ -149,6 +156,7 @@ chef_nine = ChefOffer.new(
   dish_specialty: "Ramen",
   previous_work_experience: "Fuku Noodle Bar and Kawi",
   rating: 4.3,
+  address: "Mafra",
   location: "Mafra",
   price_per_hour: 175,
   user: chef9,
@@ -157,124 +165,3 @@ chef_nine = ChefOffer.new(
 chef_nine.photo.attach(io: file9, filename: "giada.jpg", content_type: "image/png")
 chef_nine.save
 
-file10 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692829146/EW-Vikas-Khanna-K_zhlti9.jpg')
-chef_ten = ChefOffer.new(
-  name: "Vikas Khanna",
-  cuisine_category: "Indian",
-  dish_specialty: "Murgh Malai Kebab",
-  previous_work_experience: "Khana, Ellora and Mayura",
-  rating: 4.4,
-  location: "Costa de Caparica",
-  price_per_hour: 215,
-  user: chef10,
-  bio: "Lorem ipsum"
-)
-chef_ten.photo.attach(io: file10, filename: "Vikas.jpg", content_type: "image/png")
-chef_ten.save
-
-file11 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692830298/Amauri-Guichon-4_z7p1jy.png')
-chef_eleven = ChefOffer.new(
-  name: "Amaury Guichon",
-  cuisine_category: "Pastry",
-  dish_specialty: "Chocolate sculptures",
-  previous_work_experience: "The Pastry Academy",
-  rating: 5.0,
-  location: "Alfama",
-  price_per_hour: 300,
-  user: chef11,
-  bio: "Lorem ipsum"
-)
-chef_eleven.photo.attach(io: file11, filename: "Amaury.jpg", content_type: "image/png")
-chef_eleven.save
-
-file12 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692872902/440px-Bj_C3_B6rn_Frantzen_vzawtu.jpg')
-chef_twelve = ChefOffer.new(
-  name: "Björn Frantzén",
-  cuisine_category: "Game",
-  dish_specialty: "Elk stew",
-  previous_work_experience: "The Frantzén restaurant",
-  rating: 4.8,
-  location: "Arroios",
-  price_per_hour: 420,
-  user: chef12,
-  bio: "Lorem ipsum"
-)
-chef_twelve.photo.attach(io: file12, filename: "Bjorn.jpg", content_type: "image/png")
-chef_twelve.save
-
-file13 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692873126/Sk_C3_A4rmavbild-2019-06-10-kl.-17.15.06-2-copy_t0iyci.jpg')
-chef_thirteen = ChefOffer.new(
-  name: "Niklas Ekstedt",
-  cuisine_category: "Outdoors Cooking",
-  dish_specialty: "Smoked Cuisine",
-  previous_work_experience: "Lille Chèf",
-  rating: 4.8,
-  location: "Anjos",
-  price_per_hour: 380,
-  user: chef13,
-  bio: "Lorem ipsum"
-)
-chef_thirteen.photo.attach(io: file13, filename: "Niklas.jpg", content_type: "image/png")
-chef_thirteen.save
-
-file14 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692873380/Christian_s56_gmty8l.jpg')
-chef_fourteen = ChefOffer.new(
-  name: "Christian Hellberg",
-  cuisine_category: "Scandinavian Fusion",
-  dish_specialty: "Boiled potato with caviar and smoked mayonnaise",
-  previous_work_experience: "Griffins Steakhouse Extraordinaire",
-  rating: 4.9,
-  location: "Santa Cruz",
-  price_per_hour: 380,
-  user: chef14,
-  bio: "Lorem ipsum"
-)
-chef_fourteen.photo.attach(io: file14, filename: "Christian.jpg", content_type: "image/png")
-chef_fourteen.save
-
-file15 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692873532/image-21138_memibm.jpg')
-chef_fifteen = ChefOffer.new(
-  name: "Mikael Jonsson",
-  cuisine_category: "Paleo",
-  dish_specialty: "Pigeon",
-  previous_work_experience: "Hedone London",
-  rating: 4.6,
-  location: "Pena",
-  price_per_hour: 390,
-  user: chef15,
-  bio: "Lorem ipsum"
-)
-chef_fifteen.photo.attach(io: file15, filename: "Mikael.jpg", content_type: "image/png")
-chef_fifteen.save
-
-file16 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692873695/5184_vtejp9.jpg')
-chef_sixteen = ChefOffer.new(
-  name: "Magnus Nilsson",
-  cuisine_category: "New Nordic Cuisine",
-  dish_specialty: "Poached Single Scallop",
-  previous_work_experience: "Fäviken Restaurant",
-  rating: 4.1,
-  location: "Almada",
-  price_per_hour: 320,
-  user: chef16,
-  bio: "Lorem ipsum"
-)
-chef_sixteen.photo.attach(io: file16, filename: "Magnus.jpg", content_type: "image/png")
-chef_sixteen.save
-
-file17 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692788942/edob4vhapk8fffbarzkz.jpg')
-chef_seventeen = ChefOffer.new(
-  name: "Kenneth Stuen",
-  cuisine_category: "Chinese",
-  dish_specialty: "Smoked Chicken Gong Bao",
-  previous_work_experience: "Tønsberg Chicken House",
-  rating: 2.9,
-  location: "Penha França",
-  price_per_hour: 125,
-  user: chef17,
-  bio: "Lorem ipsum"
-)
-chef_seventeen.photo.attach(io: file17, filename: "Kenneth.jpg", content_type: "image/png")
-chef_seventeen.save
-
-puts "done"
