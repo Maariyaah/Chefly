@@ -20,8 +20,14 @@
           <a class="nav-link" href="#Bookings">Bookings</a>
         </li>
       </ul>
-      <a href="<%= new_user_registration_path %>" class="btn btn-login mx-2">Sign Up</a>
-      <a href="<%= new_user_session_path %>" class="btn btn-signup">Login</a>
+
+      <% if user_signed_in? %>
+        <div> Welcome <%= current_user.name %> </div>
+          <%= button_to "Sign out", destroy_user_session_path, method: :delete, class:"btn btn-login mx-2" %>
+          <%else%>
+            <a href="<%= new_user_registration_path %>" class="btn btn-login mx-2">Sign Up</a>
+            <a href="<%= new_user_session_path %>" class="btn btn-signup">Login</a>
+      <% end %>
     </div>
   </div>
 </nav>

@@ -180,4 +180,6 @@ chef_eleven = ChefOffer.new(
 )
 chef_eleven.photo.attach(io: file11, filename: "Vikas.jpg", content_type: "image/png")
 chef_eleven.save
+
+
 puts "done"
