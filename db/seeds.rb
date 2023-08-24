@@ -32,10 +32,12 @@ chef_one = ChefOffer.new(
   dish_specialty: "Bacalhau",
   previous_work_experience: "Tasca Macau, Tasca London and Belcanto",
   rating: 5.0,
-  location: "Avenida de Liberade",
   price_per_hour: 250.0,
+  address: "Rua do conde Redondo",
   user: chef1,
+  location: "Avenida da Liberdade",
   bio: "Lorem ipsum"
+
 )
 
 chef_one.photo.attach(io: file, filename: "jose.jpg", content_type: "image/png")
@@ -51,6 +53,7 @@ chef_two = ChefOffer.new(
   previous_work_experience: "Nobu, Hakkassan and Unique Sushi Lab",
   rating: 4.7,
   location: "Rua Armando Ferreira",
+  address: "Alfama",
   price_per_hour: 150.0,
   user: chef2,
   bio: "Lorem ipsum"
@@ -69,6 +72,7 @@ chef_four = ChefOffer.new(
   previous_work_experience: "Ola Nepal, Sabor de Nepal and Sherpa",
   rating: 5.0,
   location: "Rua do Conde",
+  address: "Alfama",
   price_per_hour: 1000.0,
   user: chef4,
   bio: "Lorem ipsum"
@@ -84,6 +88,7 @@ chef_five = ChefOffer.new(
   previous_work_experience: "Le Wagon, Chez Rodrigo and Go A Lisboa",
   rating: 3.5,
   location: "Villa Franca",
+  address: "Alfama",
   price_per_hour: 50,
   user: chef5,
   bio: "Lorem ipsum"
@@ -99,6 +104,7 @@ chef_six = ChefOffer.new(
   previous_work_experience: "Jamie's Italian, Barbecoa and Fifteen",
   rating: 4.7,
   location: "Cascais",
+  address: "Alfama",
   price_per_hour: 350,
   user: chef6,
   bio: "Lorem ipsum"
@@ -114,6 +120,7 @@ chef_seven = ChefOffer.new(
   previous_work_experience: "Giada, Pronto by Giada and The Cromwell",
   rating: 4.7,
   location: "Belem",
+  address: "Alfama",
   price_per_hour: 450,
   user: chef7,
   bio: "Lorem ipsum"
@@ -129,6 +136,7 @@ chef_eight = ChefOffer.new(
   previous_work_experience: "CUT, Chinois and Spago Las Vegas",
   rating: 4.9,
   location: "Sintra",
+  address: "Alfama",
   price_per_hour: 450,
   user: chef8,
   bio: "Lorem ipsum"
@@ -145,6 +153,7 @@ chef_nine = ChefOffer.new(
   rating: 4.3,
   location: "Mafra",
   price_per_hour: 175,
+  address: "Alfama",
   user: chef9,
   bio: "Lorem ipsum"
 )
@@ -158,7 +167,8 @@ chef_ten = ChefOffer.new(
   dish_specialty: "Murgh Malai Kebab",
   previous_work_experience: "Khana, Ellora and Mayura",
   rating: 4.4,
-  location: "Costa de Caparica",
+  location: "Costa da Caparica",
+  address: "Alfama",
   price_per_hour: 215,
   user: chef10,
   bio: "Lorem ipsum"
@@ -174,6 +184,7 @@ chef_eleven = ChefOffer.new(
   previous_work_experience: "The Pastry Academy",
   rating: 5.0,
   location: "Alfama",
+  address: "Alfama",
   price_per_hour: 300,
   user: chef11,
   bio: "Lorem ipsum"
