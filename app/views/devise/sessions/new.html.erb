@@ -1,9 +1,15 @@
-<div class="row d-flex justify-content-center align-items-center vh-100 p-4">
 
-   <div class="col-12 col-md-8 col-lg-6 col-xl-5" >
-      <h4 class="text-center p-4">Log in</h4>
+<div class="container mb-4 mt-0" style="background-color: rgb(136, 174, 141);"> </div>
+<div class="row d-flex justify-content-center align-items-center vh-100 mt-0 rounded" style="background-color: rgb(136, 174, 141);">
+    <div class="col-10 col-md-8  p-4 text-center ">
+    <div class="row text-center">
+      <div class="col-md-7 mb-0" style="border-radius: 2px; background-image:url('https://res.cloudinary.com/dxl592x6b/image/upload/v1692967782/delightin-dee-gVvSNWuw6kQ-unsplash_hdmyqo.jpg');background-size: cover; background-position: center;">
+      </div>
+    <div class="col-md-8 col-lg-6 col-xl-5 bg-white p-4 rounded">
+      <h2 class="text-center p-4">Log in</h2>
         <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-        <div class="form-inputs">
+          <%= f.error_notification %>
+      <div class="form-inputs">
            <%= f.input :email,
                 required: false,
                 autofocus: true,
@@ -13,10 +19,13 @@
                 input_html: { autocomplete: "current-password" } %>
            <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
          </div>
-      <div class="form-actions text-center m-4">
+      <div class="form-actions text-center mt-4 m-4">
          <%= f.button :submit, "Log in", class:"btn btn-book" %>
+      <% end %>
       </div>
-    <% end %>
-  </div>
+      <span class= "text-decoration:none"><%= render "devise/shared/links" %></span>
+     </div>
 </div>
-<%= render "devise/shared/links" %>
+</div>
+</div>
+</div>

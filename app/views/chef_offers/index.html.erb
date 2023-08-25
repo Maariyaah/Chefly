@@ -4,7 +4,7 @@
       <%= text_field_tag :query,
             params[:query],
             class: "form-control",
-            placeholder: "search by chef or cuisine..."
+            placeholder: "Search by chef or cuisine..."
         %>
       <%= submit_tag "Search", name: "", class: "btn btn-book btn-sm" %>
 
@@ -39,7 +39,7 @@
                 </div>
 
                 <div>
-                  <p><strong>Rating:</strong> <%= offer.rating %> ⭐</p>
+                  <p><strong>Rating:</strong> <%= offer.rating %></p>
                   <p class = "mb-4"><a href="<%= chef_offer_path(offer) %>" class="btn btn-book2 p-3"> <%= offer.name %></a></p>
                 </div>
               </div>

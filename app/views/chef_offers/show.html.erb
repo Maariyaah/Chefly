@@ -4,10 +4,10 @@
 
 
   <div class="container mt-4 border-0 bg-white">
-    <div style="background-color: white; max-width: 100vw; border-radius: 50px; box-shadow: 10px 10px 10px 5px #ABB2B9; border-width: 2px black">
+    <div style="background-color: white; max-width: 100vw; border-radius: 10px; box-shadow: 10px 10px 10px 5px #ABB2B9; border-width: 2px black; margin-bottom: 25 px;">
       <div class="row">
         <div class="col-md-4" style="border-radius:200px;">
-          <%= cl_image_tag @chef_offer.photo.key, style: "width: 100%; height: 100%; border-radius:2px; filter: grayscale(30%)" %>
+          <%= cl_image_tag @chef_offer.photo.key, style: "width: 100%; height: 100%; border-radius:10px; filter: grayscale(30%)" %>
         </div>
 
         <div class="col-md-4 mb-4 bg-white">
@@ -17,11 +17,12 @@
               <p class="mb-4"><strong>Cuisine Specialty:</strong> <%= @chef_offer.cuisine_category %></p>
               <p class="mb-4"><strong>Dish Specialty:</strong> <%= @chef_offer.dish_specialty %></p>
               <p class="mb-4"><strong>Notable Work Experience:</strong> <%= @chef_offer.previous_work_experience %></p>
+              <p class="mb-4"><strong>Bio: </strong> <%= @chef_offer.bio %></p>
               <p class="mb-4"><strong>Location:</strong> <%= @chef_offer.location %></p>
             </div>
 
             <div class="d-flex justify-content-space-between">
-              <p class="m-3"><strong>Rating:</strong> <%= @chef_offer.rating %> ⭐</p>
+              <p class="m-3"><strong>Rating:</strong> <%= @chef_offer.rating %></p>
               <p class="m-3"><strong>Price per hour:</strong> €<%= @chef_offer.price_per_hour %></p>
             </div>
           </div>
@@ -38,12 +39,16 @@
       </div>
 
     </div>
-    </div>
-      <div style="width: 100%; height: 400px; margin-top:20px;"
+     <h5 class="card-title">Chef's Location</h5>
+     <div style="width: 100%; height: 400px; margin-top:15px; border-radius:10px;"
           data-controller="map"
           data-map-markers-value="<%= @markers.to_json %>"
-          data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+          data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+
+          </div>
      </div>
+
+    </div>
 
 </div>
 
