@@ -42,7 +42,7 @@ chef_one = ChefOffer.new(
   address: "Rua do conde Redondo",
   user: chef1,
   location: "Avenida da Liberdade",
-  bio: "Lorem ipsum"
+  bio: "Jose has received widespread international acclaim. His career has seen him as the executive chef at the prestigious Aquavit in New York at the age of 24, a visiting professor of culinary science, and a guest chef for the Obama presidency’s first state dinner."
 )
 
 chef_one.photo.attach(io: file, filename: "jose.jpg", content_type: "image/png")
@@ -53,15 +53,15 @@ file2 = URI.open('https://res.cloudinary.com/dxl592x6b/image/upload/v1692711857/
 puts "chef one done"
 chef_two = ChefOffer.new(
   name: "Marlene Vieira",
-  cuisine_category: "Sushi",
-  dish_specialty: "Sashimi",
+  cuisine_category: "Portuguese",
+  dish_specialty: "Smoked Herring",
   previous_work_experience: "Nobu, Hakkassan and Unique Sushi Lab",
   rating: 4.7,
   location: "Rua Armando Ferreira",
   address: "Alfama",
   price_per_hour: 150.0,
   user: chef2,
-  bio: "Lorem ipsum"
+  bio: "I want to take you on a journey to discover the richness of Portuguese gastronomy. From this abundance you can see that, like our population, our gastronomic heritage is also rich and diverse in flavors and origins."
 )
 chef_two.photo.attach(io: file2, filename: "marlene.jpg", content_type: "image/png")
 chef_two.save
@@ -80,7 +80,7 @@ chef_four = ChefOffer.new(
   address: "Alfama",
   price_per_hour: 1000.0,
   user: chef4,
-  bio: "Lorem ipsum"
+  bio: "Beatriz is a culinary legend. She has worked and lived in Nepal for 8 years, and lives and breathes for Nepalese food."
 )
 chef_four.photo.attach(io: file4, filename: "beatriz.jpg", content_type: "image/png")
 chef_four.save
@@ -96,7 +96,7 @@ chef_five = ChefOffer.new(
   address: "Alfama",
   price_per_hour: 50,
   user: chef5,
-  bio: "Lorem ipsum"
+  bio: "Antonio is a rising star on the international culinary scene. His favorite foods are seafood and dairy-based. Part of his philosophy is that a truffle and a potato can have the same value, and that we are the ones who determine the prices of the produce."
 )
 chef_five.photo.attach(io: file5, filename: "antonio.jpg", content_type: "image/png")
 chef_five.save
@@ -112,7 +112,7 @@ chef_six = ChefOffer.new(
   address: "Alfama",
   price_per_hour: 350,
   user: chef6,
-  bio: "Lorem ipsum"
+  bio: "Jamie is a British restaurateur and cookbook author. He is known for his casual approach to cuisine, which has led him to front numerous television shows and open many restaurants."
 )
 chef_six.photo.attach(io: file6, filename: "jamie.jpg", content_type: "image/png")
 chef_six.save
@@ -128,7 +128,7 @@ chef_seven = ChefOffer.new(
   address: "Alfama",
   price_per_hour: 450,
   user: chef7,
-  bio: "Lorem ipsum"
+  bio: "Giada is an Italian American chef, entrepreneur, writer, and television personality. She was the host of Food Network's program called Giada at Home."
 )
 chef_seven.photo.attach(io: file7, filename: "giada.jpg", content_type: "image/png")
 chef_seven.save
@@ -144,7 +144,7 @@ chef_eight = ChefOffer.new(
   address: "Alfama",
   price_per_hour: 450,
   user: chef8,
-  bio: "Lorem ipsum"
+  bio: "Wolfgang launched modern fusion cuisine by combining classic French techniques with California and Asian influences, using fresh ingredients showcasing Portugal’s agricultural bounty."
 )
 chef_eight.photo.attach(io: file8, filename: "wolfgang.jpg", content_type: "image/png")
 chef_eight.save
@@ -160,7 +160,7 @@ chef_nine = ChefOffer.new(
   price_per_hour: 175,
   address: "Alfama",
   user: chef9,
-  bio: "Lorem ipsum"
+  bio: "He is the founder of the Momofuku restaurant group. In 2009, Momofuku Ko was awarded two Michelin stars, which the restaurant has retained each year since."
 )
 chef_nine.photo.attach(io: file9, filename: "giada.jpg", content_type: "image/png")
 chef_nine.save
@@ -176,7 +176,7 @@ chef_ten = ChefOffer.new(
   address: "Alfama",
   price_per_hour: 215,
   user: chef10,
-  bio: "Lorem ipsum"
+  bio: "Vikas Khanna is one of the most beloved Indian chefs in the world. An award-winning Michelin-Starred chef and host of the highly rated prime-time shows MasterChef India, Twist of Taste, and Mega Kitchens on National Geographic."
 )
 chef_ten.photo.attach(io: file10, filename: "Vikas.jpg", content_type: "image/png")
 chef_ten.save
@@ -192,7 +192,7 @@ chef_eleven = ChefOffer.new(
   address: "Alfama",
   price_per_hour: 300,
   user: chef11,
-  bio: "Lorem ipsum"
+  bio: "Amaury is intuitive and is guided in his creations by his various inspirations, his sense of aesthetics and the love of quality execution. He has opened his own Pastry Academy which focuses on teaching an intensive three month program to passionate people and new soon-to-be chefs."
 )
 chef_eleven.photo.attach(io: file11, filename: "Amaury.jpg", content_type: "image/png")
 chef_eleven.save
@@ -208,7 +208,7 @@ chef_twelve = ChefOffer.new(
   address: "Arroios",
   price_per_hour: 420,
   user: chef12,
-  bio: "Lorem ipsum"
+  bio: "The Swedish Chef of Chefs, as he is sometimes referred to, owns and operates the Frantzén restaurant, which received two Michelin stars in 2013. Frantzén is a well-known figure in Swedish gastronomy."
 )
 chef_twelve.photo.attach(io: file12, filename: "Bjorn.jpg", content_type: "image/png")
 chef_twelve.save
@@ -224,7 +224,7 @@ chef_thirteen = ChefOffer.new(
   price_per_hour: 380,
   address: "Arroios",
   user: chef13,
-  bio: "Lorem ipsum"
+  bio: "Niklas has returned to Swedish cuisine’s roots by emphasizing the authenticity of cooking over a live fire. Ekstedt kitchens prepare traditional Swedish dishes in a fire pit, exposing the food to unforgiving heat and nuanced smoke for a truly unique gastronomic experience."
 )
 chef_thirteen.photo.attach(io: file13, filename: "Niklas.jpg", content_type: "image/png")
 chef_thirteen.save
@@ -240,7 +240,7 @@ chef_fourteen = ChefOffer.new(
   address: "Arroios",
   price_per_hour: 380,
   user: chef14,
-  bio: "Lorem ipsum"
+  bio: "Many people recognize him from ‘Dinner Secrets from the Abbey,’ in which he appeared on multiple occasions; in the spring of 2008, he was one of two chefs who competed against each other in ‘Chef’s Duel.’  Hellberg has cooked for events such as banquets for the annual Nobel Peace Prize awards. "
 )
 chef_fourteen.photo.attach(io: file14, filename: "Christian.jpg", content_type: "image/png")
 chef_fourteen.save
@@ -256,7 +256,7 @@ chef_fifteen = ChefOffer.new(
   address: "Arroios",
   price_per_hour: 390,
   user: chef15,
-  bio: "Lorem ipsum"
+  bio: "Jonsson, a trained lawyer, owns Hedone in West London, one of the world’s best restaurants. Jonsson’s journey to becoming one of the world’s best chefs has been difficult because he suffers from severe food allergies and has only been able to control his symptoms and pursue his dream of opening a restaurant after switching to a paleo diet."
 )
 chef_fifteen.photo.attach(io: file15, filename: "Mikael.jpg", content_type: "image/png")
 chef_fifteen.save
@@ -272,7 +272,7 @@ chef_sixteen = ChefOffer.new(
   price_per_hour: 320,
   address: "Arroios",
   user: chef16,
-  bio: "Lorem ipsum"
+  bio: "Magnus has an emphasis on fresh, high-quality ingredients, and all raw materials are sourced locally. Everything is seasonal, from fresh meat to game to vegetables. He is an extraordinary voice in the New Nordic Cuisine movement, and has been rightly compared to Noma’s René Redzepi."
 )
 chef_sixteen.photo.attach(io: file16, filename: "Magnus.jpg", content_type: "image/png")
 chef_sixteen.save
@@ -288,7 +288,7 @@ chef_seventeen = ChefOffer.new(
   price_per_hour: 125,
   address: "Arroios",
   user: chef17,
-  bio: "Lorem ipsum"
+  bio: "Stuen is regarded as one of the world’s most knowledgeable and respected chefs. He rose to prominence as the Vice President of Culinary Arts at New York’s Chinese Culinary Institute"
 )
 chef_seventeen.photo.attach(io: file17, filename: "Kenneth.jpg", content_type: "image/png")
 chef_seventeen.save
