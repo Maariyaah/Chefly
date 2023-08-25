@@ -1,11 +1,20 @@
 <%= simple_form_for [@chef_offer, @booking] do |f| %>
-  <div class="form-inputs">
 
-    <p><%= f.input :starting, as :string, input_html: {data: { controller: "datepicker"} } %></p>
-    <p><%= f.input :ending %></p>
-  </div>
-
-  <div class="form-actions btn btn-book" button type="button">
-    <%= f.button :submit, "Book now" %>
+<div class="container bg-white mt-5">
+  <div class="row justify-content-center p-4">
+    <div class="col-md-6">
+      <div class="form-group" >
+        <%= f.input :starting, class: "form-control" %>
+      </div>
+      <div class="form-group text-center">
+        <%= f.input :ending, class: "form-control rounded-pill" %>
+      </div>
+      <div class="text-center">
+    <%= f.button :submit, "Book #{@chef_offer.name}", class:"btn btn-book mt-3" %>
      </div>
+     </div>
+    </div>
+  </div>
+</div>
+
 <% end %>

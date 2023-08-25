@@ -4,3 +4,4 @@ class BookingsController < ApplicationController
     @chef_offer = ChefOffer.find(params["chef_offer_id"])
   end
 end
+ 
