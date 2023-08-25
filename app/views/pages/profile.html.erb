@@ -1,0 +1,24 @@
+
+<div style="background-color: rgb(136, 174, 141);">
+<div class="container p-4" mb-4  style= "width:100vw; height:100vh";>
+
+<h3> Bookings</h3>
+<% @bookings.each do |booking|%>
+
+<div class="notification container m-4 border-0 rounded " style="max-width: 100vw;">
+  <div class="notification-content m-3">
+    <p><small> Chef <%= booking.chef_offer.name %></small></p>
+    <p><%= booking.starting %></p>
+  </div>
+
+  <div>
+
+
+  <%= link_to 'delete', booking_path(booking), data: { "turbo-method": :delete } %>
+
+  </div>
+</div>
+
+<% end %>
+</div>
+</div>
