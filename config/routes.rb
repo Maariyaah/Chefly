@@ -4,8 +4,10 @@ Rails.application.routes.draw do
   }
   root to: "pages#home"
   resources :chef_offers, only: [ :index, :new, :show ] do
-    resources :bookings, only: [ :new, :index ]
+    resources :bookings, only: [ :create ]
   end
+
+  get '/profile', to: "pages#profile", as: :profile
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
