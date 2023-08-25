@@ -9,25 +9,25 @@ ChefOffer.destroy_all
 User.destroy_all
 ## user admin
 
-chef1 = User.create(email:"avillez@chef.com", password:'123456',is_chef: true, name: 'Jose Avillez', username:'Avillez1',cuisine_preferences: 'Portuguese')
+chef1 = User.create(email: "avillez@chef.com", password: '123456', is_chef: true, name: 'Jose Avillez', username: 'Avillez1', cuisine_preferences: 'Portuguese')
 puts "#{chef1.name} was created!"
-chef2 = User.create(email:"vieira@nobu.com", password:'123456',is_chef: true, name: 'Marlene Vieira', username:'Malene.v',cuisine_preferences: 'Sushi')
+chef2 = User.create(email: "vieira@nobu.com", password: '123456', is_chef: true, name: 'Marlene Vieira', username: 'Malene.v', cuisine_preferences: 'Sushi')
 puts "#{chef2.name} was created!"
-chef4 = User.create(email:"beatriz@lewagon.com", password:'123456',is_chef: true, name: 'Beatriz Vieira', username:'Beaa',cuisine_preferences: 'Nepalese')
-chef5 = User.create(email:"quaresma4ever@chef.com", password:'123456',is_chef: true, name: 'Antonio Quaresma', username:'Quaresma',cuisine_preferences: 'Vegan')
+chef4 = User.create(email: "beatriz@lewagon.com", password: '123456', is_chef: true, name: 'Beatriz Vieira', username: 'Beaa', cuisine_preferences: 'Nepalese')
+chef5 = User.create(email: "quaresma4ever@chef.com", password: '123456', is_chef: true, name: 'Antonio Quaresma', username: 'Quaresma', cuisine_preferences: 'Vegan')
 puts "chef 5 is created"
-chef6 = User.create(email:"jamie.oliver@chef.com", password:'123456',is_chef: true, name: 'Jamie Oliver', username:'Jamie.O',cuisine_preferences: 'Modern British')
-chef7 = User.create(email: "giadi@chef.com", password:'123456',is_chef: true, name: 'Giada De Laurentiis', username:'GiadidL',cuisine_preferences: 'Italian')
-chef8 = User.create(email: "wolfie@chef.com", password:'123456',is_chef: true, name: 'Wolfgang Puck', username:'Wolfie',cuisine_preferences: 'French-Asian Fusion')
-chef9 = User.create(email: "david@chef.com", password:'123456',is_chef: true, name: 'David Chang', username:'DavidChang',cuisine_preferences: 'American-Asian Fusion')
-chef10 = User.create(email: "vikas@chef.com", password:'123456',is_chef: true, name: 'Vikas Khanna', username:'Vikas',cuisine_preferences: 'Indian')
-chef11 = User.create(email: "amaury@chef.com", password:'123456',is_chef: true, name: 'Amaury Guichon', username:'Amaury',cuisine_preferences: 'Pastry')
-chef12 = User.create(email: "bjorn@chef.com", password:'123456',is_chef: true, name: 'Björn Frantzén', username:'Bjorn',cuisine_preferences: 'Game')
-chef13 = User.create(email: "niklas@chef.com", password:'123456',is_chef: true, name: 'Niklas Ekstedt', username:'Niklas',cuisine_preferences: 'Outdoors Cooking')
-chef14 = User.create(email: "christian@chef.com", password:'123456',is_chef: true, name: 'Christian Hellberg', username:'Christian',cuisine_preferences: 'Scandinavian Fusion')
-chef15 = User.create(email: "mikael@chef.com", password:'123456',is_chef: true, name: 'Mikael Jonsson', username:'Mikael',cuisine_preferences: 'Paleo')
-chef16 = User.create(email: "magnus@chef.com", password:'123456',is_chef: true, name: 'Magnus Nilsson', username:'Magnus',cuisine_preferences: 'New Nordic Cuisine')
-chef17 = User.create(email: "kenneth@chef.com", password:'123456',is_chef: true, name: 'Kenneth Stuen', username:'Kenneth',cuisine_preferences: 'Chinese')
+chef6 = User.create(email: "jamie.oliver@chef.com", password: '123456', is_chef: true, name: 'Jamie Oliver', username: 'Jamie.O', cuisine_preferences: 'Modern British')
+chef7 = User.create(email: "giadi@chef.com", password: '123456', is_chef: true, name: 'Giada De Laurentiis', username: ' GiadidL', cuisine_preferences: 'Italian')
+chef8 = User.create(email: "wolfie@chef.com", password: '123456', is_chef: true, name: 'Wolfgang Puck', username: 'Wolfie', cuisine_preferences: 'French-Asian Fusion' )
+chef9 = User.create(email: "david@chef.com", password: '123456', is_chef: true, name: 'David Chang', username: 'DavidChang', cuisine_preferences: 'American-Asian Fusion')
+chef10 = User.create(email: "vikas@chef.com", password: '123456', is_chef: true, name: 'Vikas Khanna', username: 'Vikas', cuisine_preferences: 'Indian')
+chef11 = User.create(email: "amaury@chef.com", password: '123456', is_chef: true, name: 'Amaury Guichon', username: 'Amaury', cuisine_preferences: 'Pastry')
+chef12 = User.create(email: "bjorn@chef.com", password: '123456', is_chef: true, name: 'Björn Frantzén', username: 'Bjorn', cuisine_preferences: 'Game')
+chef13 = User.create(email: "niklas@chef.com", password: '123456', is_chef: true, name: 'Niklas Ekstedt', username: 'Niklas', cuisine_preferences: 'Outdoors Cooking')
+chef14 = User.create(email: "christian@chef.com", password: '123456', is_chef: true, name: 'Christian Hellberg', username: 'Christian', cuisine_preferences: 'Scandinavian Fusion')
+chef15 = User.create(email: "mikael@chef.com", password: '123456', is_chef: true, name: 'Mikael Jonsson', username: 'Mikael', cuisine_preferences: 'Paleo')
+chef16 = User.create(email: "magnus@chef.com", password: '123456', is_chef: true, name: 'Magnus Nilsson', username: 'Magnus', cuisine_preferences: 'New Nordic Cuisine')
+chef17 = User.create(email: "kenneth@chef.com", password: '123456', is_chef: true, name: 'Kenneth Stuen', username: 'Kenneth', cuisine_preferences: 'Chinese')
 
 puts "chef 17 is created"
 
@@ -43,7 +43,6 @@ chef_one = ChefOffer.new(
   user: chef1,
   location: "Avenida da Liberdade",
   bio: "Lorem ipsum"
-
 )
 
 chef_one.photo.attach(io: file, filename: "jose.jpg", content_type: "image/png")

@@ -19,29 +19,26 @@
 
 
 
-<div class="container m-5">
+<div class="container m-6">
   <div class="row">
     <% @chef_offers.each do |offer| %>
       <div class="col-md-6 mb-4">
-        <div class="card m-4" style="background-color: #f4f4f4; overflow: hidden; border-radius:20px; border-width:0;">
+        <div class="card m-4 bg-white border-0">
           <div class="row">
-              <div class="col-4 mb-0" style="border-radius: 2px; margin-top:0; background-image:url('<%= cl_image_path offer.photo.key %>');background-size: cover; background-position: center;">
+              <div class="col-4 mb-0" style="border-radius: 2px; background-image:url('<%= cl_image_path offer.photo.key %>');background-size: cover; background-position: center;">
             </div>
 
             <div class="col-7">
-              <div class="card-body m-3 border-0 rounded" style="border-radius: 90px;">
+              <div class="card-body m-3 border-0 rounded">
                 <div class="card-text text-justify">
-                <h4 class="mb-2"> <strong><%= offer.name%></strong> </h4>
-
-                <p class="mb-2"><strong>Cuisine Specialty:</strong> <%= offer.cuisine_category %></p>
-
+                  <p class="mb-2" style="font-size:26px;"> <strong><%= offer.name%></strong> </p>
                   <p class="mb-2"><strong>Cuisine Specialty:</strong> <%= offer.cuisine_category %></p>
                   <p class="mb-2"><strong>Dish Specialty:</strong> <%= offer.dish_specialty %></p>
                 </div>
 
                 <div>
                   <p><strong>Rating:</strong> <%= offer.rating %> ⭐</p>
-                  <p style="margin-bottom: 20px;"><a href="<%= chef_offer_path(offer) %>" class="btn btn-book2 p-3"> <%= offer.name %></a></p>
+                  <p class = "mb-4"><a href="<%= chef_offer_path(offer) %>" class="btn btn-book2 p-3"> <%= offer.name %></a></p>
                 </div>
               </div>
             </div>
