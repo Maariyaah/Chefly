@@ -9,12 +9,11 @@ class BookingsController < ApplicationController
     @booking.chef_offer = @chef_offer
     @booking.user = current_user
     if @booking.save
-      redirect_to profile_path
+      redirect_to profile_path, notice: 'Booking saved!'
     else
-      flash[:alert] = "Date can't be blank!"
-      render "chef_offers/show"
+      render "chef_offers/show", status: :unprocessable_entity
     end
-    
+
   end
 
   def destroy
