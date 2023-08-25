@@ -5,6 +5,7 @@ puts 'Dropping elements from database...'
 sleep(0.5)
 puts '....'
 
+Booking.destroy_all
 ChefOffer.destroy_all
 User.destroy_all
 ## user admin
