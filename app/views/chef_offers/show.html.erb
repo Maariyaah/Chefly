@@ -4,7 +4,7 @@
 
 
   <div class="container mt-4 border-0 bg-white">
-    <div style="background-color: white; max-width: 100vw; border-radius: 200px; box-shadow: 10px 10px 10px 5px #ABB2B9; border-width: 2px black">
+    <div style="background-color: white; max-width: 100vw; border-radius: 50px; box-shadow: 10px 10px 10px 5px #ABB2B9; border-width: 2px black">
       <div class="row">
         <div class="col-md-4" style="border-radius:200px;">
           <%= cl_image_tag @chef_offer.photo.key, style: "width: 100%; height: 100%; border-radius:2px; filter: grayscale(30%)" %>
@@ -27,8 +27,13 @@
           </div>
         </div>
 
-        <div class="col-md-4">
-          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" style="width: 100px; height:100%">
+        <div class="col-md-4 mt-2">
+          <div class="d-flex justify-content-center">
+            <%= simple_form_for [@chef_offer, @booking] do |f| %>
+              <%= f.input :starting, label: "Choose your date and time", as: :string, input_html: { data: { controller: "datepicker" } }%>
+              <%= f.button :submit, "Book #{@chef_offer.name}", class:"btn btn-book mt-1 mb-1" %>
+            <% end %>
+          </div>
         </div>
       </div>
 
@@ -43,4 +48,4 @@
 </div>
 
 
-<%= render 'bookings/new' %>
+<%# <%= render 'bookings/new' %>
